@@ -1,0 +1,380 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  background-image: url("/assets/img/Light\ bulb3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* transition: all ease-in 5s; */
+}
+/* .header:hover {
+  transform: scale(1.2);
+} */
+
+.header-logo {
+  display: flex;
+  flex-direction: row;
+}
+.header-logo span {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 8%;
+  left: 3%;
+}
+
+.header-nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20%;
+  position: absolute;
+  top: 10%;
+  right: 40%;
+}
+
+.header-nav-items {
+  list-style: none;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all ease 0.4s;
+}
+
+.header-nav-items a {
+  text-decoration: none;
+  color: #fff;
+}
+.header-nav-items a:hover {
+  color: rgb(219, 216, 216);
+}
+
+.header-side {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 8%;
+  top: 10%;
+  color: #fff;
+  transition: all ease 0.4s;
+}
+
+.side-first {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.side-second {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.side-first:hover {
+  color: rgb(219, 216, 216);
+  cursor: pointer;
+}
+.side-second:hover {
+  color: rgb(219, 216, 216);
+  cursor: pointer;
+}
+
+.header-nav-subhome {
+  background-color: rgb(26, 24, 24);
+  position: absolute;
+  width: 170px;
+  top: 55px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 300;
+  color: rgb(156, 154, 154);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header-nav-items li:hover .header-nav-subhome {
+  top: 45px;
+  opacity: 1;
+  visibility: visible;
+  transition: all ease 0.7s;
+  content: ("&rarr");
+}
+
+.header-nav-subhome li {
+  list-style: none;
+}
+
+.header-nav-subpage {
+  background-color: rgb(26, 24, 24);
+  position: absolute;
+  width: 170px;
+  top: 55px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 300;
+  color: rgb(156, 154, 154);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header-nav-subpage li {
+  list-style: none;
+}
+
+.mega-box {
+  position: fixed;
+  top: 100px;
+  background-color: rgb(26, 24, 24);
+  width: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.mega-box .content {
+  padding: 25px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  line-height: 15px;
+  font-size: 12px;
+}
+
+.header-nav-items li:hover .mega-box {
+  top: 50px;
+  opacity: 1;
+  visibility: visible;
+  transition: all ease 0.3s;
+  content: ("&rarr");
+}
+
+.row {
+  width: calc(25% - 100px);
+  line-height: 30px;
+}
+
+.row header {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(156, 154, 154);
+  padding: 0 40px;
+  transition: all ease 0.3s;
+}
+
+.mega-link li {
+  list-style: none;
+}
+
+.mega-link:hover {
+  color: #fff;
+}
+
+.sentences-header {
+  align-items: center;
+  justify-content: center;
+  margin: 15% 30% 2% 30%;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-align: center;
+  color: rgb(43, 42, 41);
+}
+
+.sentences-para {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  color: rgb(148, 146, 144);
+  padding-left: 30%;
+  padding-right: 30%;
+  margin-bottom: 15%;
+}
+
+.gallery-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.first-photo-gallery-1 img {
+  display: block;
+  width: 100%;
+  transition: all ease-in 0.5s;
+}
+
+.first-photo-gallery-1 img:hover {
+  transform: scale(1.07);
+  opacity: 0.95;
+}
+
+.first-photo-gallery-1 {
+  overflow: hidden;
+}
+
+.second-photo-gallery-1 img {
+  display: block;
+  width: 100%;
+  transition: all ease-in 0.5s;
+}
+
+.second-photo-gallery-1 img:hover {
+  transform: scale(1.07);
+  opacity: 0.95;
+}
+
+.second-photo-gallery-1 {
+  overflow: hidden;
+}
+
+.gallery-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 15%;
+}
+
+.second-photo-gallery-2 img {
+  display: block;
+  width: 100%;
+  transition: all ease-in 0.5s;
+}
+
+.second-photo-gallery-2 img:hover {
+  transform: scale(1.07);
+  opacity: 0.95;
+}
+
+.second-photo-gallery-2 {
+  overflow: hidden;
+}
+
+.first-photo-gallery-2 img {
+  display: block;
+  width: 100%;
+  transition: all ease-in 0.5s;
+}
+
+.first-photo-gallery-2 img:hover {
+  transform: scale(1.07);
+  opacity: 0.95;
+}
+
+.first-photo-gallery-2 {
+  overflow: hidden;
+}
+
+.sentences-header-2 {
+  align-items: center;
+  justify-content: center;
+  margin: 15% 30% 1% 30%;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-align: center;
+  color: rgb(43, 42, 41);
+}
+
+.sentences-para-2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 40px;
+  color: rgb(148, 146, 144);
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-bottom: 5%;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0;
+  margin: 0 30% 20% 30%;
+}
+.input ::placeholder {
+  padding-left: 20px;
+}
+.email {
+  width: 400px;
+  height: 55px;
+}
+
+.btn {
+  width: 150px;
+  height: 55px;
+  background-color: rgb(2, 2, 2);
+  color: #fff;
+  transition: all 0.7s;
+}
+
+.btn:hover {
+  background-color: rgb(39, 38, 37);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 10% 0 10% 0;
+}
+
+.footer-line {
+  border-top: 1px solid rgb(236, 230, 230);
+  border-bottom: 1px solid rgb(236, 230, 230);
+}
+
+.footer-items {
+  margin-top: 20px;
+}
+
+.footer-items span {
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  letter-spacing: 5px;
+}
+
+.footer-items li {
+  list-style: none;
+  font-size: 12px;
+  line-height: 20px;
+}
+.footer-items li a {
+  text-decoration: none;
+  color: rgb(148, 146, 144);
+}
+
+.footer-last {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-para {
+  padding-left: 10%;
+  font-size: 9px;
+  color: rgb(148, 146, 144);
+}
+.footer-para a {
+  text-decoration: none;
+  color: rgb(148, 146, 144);
+}
+.footer-social {
+  display: flex;
+  column-gap: 20px;
+  font-size: 14px;
+  padding-right: 10%;
+}
+.footer-social a {
+  color: rgb(148, 146, 144);
+}
